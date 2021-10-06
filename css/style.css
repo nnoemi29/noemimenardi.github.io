@@ -1,0 +1,533 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+/*/ font /*/
+@font-face {
+	font-weight: 'Eina 01' 'GrandSlang';
+	src: url(font/Eina 01/Eina01-Regular.otf);
+}
+
+@font-face {
+	font-weight:'GrandSlang';
+	src: url(font/GrandSlang/GrandSlang-Roman.tff);
+}
+
+/*/ proprietà body generale /*/
+h1, h2, h3, .col-6{
+	font-family: 'GrandSlang';
+}
+
+h4, p, ul, .info, .project{
+	font-family: 'Eina 01';
+}
+
+/*/Cursor/*/
+html {
+  cursor: none;
+}
+
+#circularcursor {
+  background-color: transparent;
+  border:1px solid black;
+  height:20px;
+  width:20px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  position: absolute;
+  z-index: 1;
+}
+
+/*/ Proprietà indice a sinistra /*/
+.menu{
+	border-right: 1px solid black;
+}
+
+.menu_nascosto{
+	display: contents;
+}
+
+.menu1{
+	border-right: 1px solid black;
+	height: 714px;
+}
+
+h1{
+	font-size: 45px;
+	text-align: center;
+	padding: 12px;
+	border-bottom: 1px solid black;
+}
+
+.col-6{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 20px;
+}
+
+.footer{
+	border-top: 1px solid black;
+}
+
+h2{
+	font-weight: lighter;
+	font-size: 28px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 25px;
+	border-top: 1px solid black;
+}
+
+h4{
+	font-size: 22px;
+	font-weight: lighter;
+	padding-bottom: 22px;
+	padding-left: 50px;
+	line-height: 32px;
+}
+
+p{
+	padding-left: 15px;
+	padding-top: 15px;
+	padding-right: 30px;
+	padding-bottom: 24px;
+	font-size: 20px !important;
+}
+
+.colum1{
+	position: fixed !important;
+}
+
+/*/ Proprietà About /*/
+.titolo-col2{
+	text-align: left;
+	font-size: 30px;
+	padding-bottom: 12px;
+	padding-top: 27px;
+	border-bottom: 1px solid black;
+}
+
+.About{
+	float: left;
+	width: 100%;
+}
+
+img{
+	padding-top: 24px;
+}
+
+img.cover{
+	width: 100%;
+	padding-bottom: 24px;
+}
+
+h3{
+	font-size: 20px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	padding-top: 22px;
+	}
+
+h3.about{
+		border-top: 1px solid black;
+	}
+
+span.data{
+	font-size: 15px;
+	font-weight: lighter;
+}
+
+h5{
+	padding-left: 25px;
+	font-weight: 300;
+	padding-top: 10px;
+	padding-bottom: 18px;
+}
+
+h5.areas{
+	line-height: 23px;
+}
+
+/*/ Progetti testi /*/
+.subtitle{
+	font-size: 18px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid black;
+}
+
+.info{
+	font-size: 18px;
+	font-weight: lighter;
+}
+
+.concept-brief{
+	font-size: 21px;
+	padding-top: 20px;
+	padding-left: 1px;
+	}
+
+.text{
+	font-size: 18px;
+	font-weight: lighter;
+	line-height: 24px;
+	padding-left: 1px;
+}
+
+.riga{
+	border-bottom: 1px solid black;
+}
+
+/*/ Progetti immagini e video /*/
+.guerrilla{
+	width: 100%;
+	padding-right: 14px;
+}
+
+.app{
+	width: 86%;
+	padding-left: 24px;
+}
+
+.cioccolato_web{
+	width: 100%;
+	padding-left: 24px;
+	padding-right: 24px;
+	padding-top: 24px;
+}
+
+.adv{
+	width: 100%;
+	padding-right: 16px;
+	padding-top: 24px;
+}
+
+.tram{
+	width: 100%;
+}
+
+.moodmoritz_web{
+	width: 100%;
+	padding-top: 24px;
+}
+
+/*/ Proprietà link e menu /*/
+a{
+	color: black;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #6D6D6A;
+	cursor: none;
+}
+
+.menuToggle{
+  top: 50px;
+  left: 50px;
+	float: right;
+	padding-top: 10px;
+}
+
+.menuToggle span{
+  display: none;
+  width: 27px;
+  height: 2px;
+  margin-bottom: 3px;
+  position: relative;
+  background: black;
+}
+
+/*/ mouseover - immagini /*/
+.img1{
+	width: 280px;
+	padding-left: 15px;
+	display: none;
+}
+
+.img2{
+	width: 300px;
+	margin-left: 300px;
+	margin-top: 50px;
+	display: none;
+}
+
+.img3{
+	width: 370px;
+	margin-left: 150px;
+	margin-top: 200px;
+	display: none;
+}
+
+.img4{
+	width: 370px;
+	margin-left: 500px;
+	margin-top: 270px;
+	display: none;
+}
+
+.img5{
+	width: 370px;
+	margin-left: 520px;
+	display: none;
+}
+
+.img6{
+	width: 300px;
+	margin-left: 350px;
+	display: none;
+}
+
+.img7{
+	width: 380px;
+	margin-top: 330px;
+	display: none;
+}
+
+.img8{
+	width: 300px;
+	margin-left: 500px;
+	margin-top: 270px;
+	display: none;
+}
+
+.img9{
+	width: 300px;
+	margin-left: 200px;
+	margin-top: 160px;
+	display: none;
+}
+
+/*/ Responsive /*/
+@media (max-width:1131px) {
+	.colum1{
+		position: fixed !important;
+		width: 320px;
+	}
+
+	h1{
+		font-size: 39px !important;
+	}
+
+	h3{
+		font-size: 17px;
+	}
+
+	.subtitle{
+		font-size: 17px;
+		padding-bottom: 16px;
+		padding-top: 19px;
+	}
+
+	.info{
+		font-size: 17px;
+	}
+
+	.concept-brief{
+		font-size: 15px;
+		padding-top: 22px;
+	}
+
+	.text{
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	.app{
+		width: 83%;
+		padding-left: 16px;
+	}
+}
+
+@media (max-width: 992px) {
+	.colum1{
+		position: relative !important;
+		width: auto;
+	}
+
+	.menuToggle span{
+		display: inherit;
+	}
+	.menu1{
+		height: auto;
+	}
+
+	.menu_nascosto{
+		display: none;
+	}
+
+	.img1{
+	display: none !important;
+	}
+
+	.img2{
+	display: none !important;
+	}
+
+	.img3{
+	display: none !important;
+	}
+
+	.img4{
+	display: none !important;
+	}
+
+	.img5{
+	display: none !important;
+	}
+
+	.img6{
+	display: none !important;
+	}
+
+	.img7{
+	display: none !important;
+	}
+
+	.img8{
+	display: none !important;
+	}
+
+	.img9{
+	display: none !important;
+	}
+
+	h3{
+		font-size: 20px;
+	}
+}
+
+@media (max-width:768px) {
+	.colum1{
+		position: relative;
+	}
+
+	p{
+		width: auto;
+		font-size: 16px;
+	}
+
+	.subtitle{
+		font-size: 14px;
+		padding-bottom: 14px;
+		padding-top: 17px;
+	}
+
+	.info{
+		font-size: 14px;
+	}
+
+	.concept-brief{
+		font-size: 17px;
+		padding-top: 14px;
+	}
+
+	.text{
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.app{
+		width: 78%;
+		padding-left: 2px;
+	}
+
+	/*/.menu_nascosto {
+	display: none;
+	}/*/
+}
+
+@media (max-width:647px) {
+	img.cover{
+		width: 218px;
+	}
+}
+
+@media (max-width: 576px) {
+	.colum1 {
+		position: inherit;
+	}
+
+	img.cover{
+		display: block;
+		margin: auto;
+	}
+
+	p{
+		font-size: 15px;
+		width: auto;
+	}
+
+	.subtitle{
+		font-size: 12px;
+		padding-bottom: 8px;
+		padding-top: 12px;
+	}
+
+	.info{
+		font-size: 12px;
+	}
+
+	.concept-brief{
+		font-size: 15px;
+		padding-top: 12px;
+	}
+
+	.text{
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	.app{
+		display: block;
+		margin: auto;
+	}
+}
+
+@media (max-width: 520px) {
+	.colum1{
+		position: relative;
+	}
+
+	p{
+		font-size: 15px !important;
+	}
+
+	img.cover{
+		display: block;
+		margin: auto;
+	}
+
+	.subtitle{
+		font-size: 14px;
+	}
+
+	.info{
+		font-size: 14px;
+	}
+
+	.concept-brief{
+		font-size: 17px;
+		padding-top: 14px;
+	}
+
+	.text{
+		font-size: 14px;
+		line-height: 18px;
+		padding-bottom: 14px;
+	}
+}
